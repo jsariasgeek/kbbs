@@ -10,3 +10,5 @@ class Envio(models.Model):
 	waybill = models.BigIntegerField()
 	picture = models.ImageField(upload_to='kbbs')
 	responsable_dhl = models.ForeignKey(Mensajero)
+
+	
