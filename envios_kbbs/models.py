@@ -12,7 +12,7 @@ class Envio(models.Model):
 	responsable_dhl = models.ForeignKey(Mensajero)
 
 	def get_number_parte(self):
-		return self.parte.descripcion
+		return self.parte.numero_de_parte
 
 
 	get_number_parte.short_description = 'Numero de Parte'
