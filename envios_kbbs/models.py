@@ -11,4 +11,7 @@ class Envio(models.Model):
 	picture = models.ImageField(upload_to='kbbs')
 	responsable_dhl = models.ForeignKey(Mensajero)
 
+	def get_number_parte(self):
+		return self.parte.descripcion
+
 	
