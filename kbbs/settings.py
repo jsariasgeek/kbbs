@@ -22,10 +22,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = '^ucnnzkve7%5wp_q6$hrnf-s!##1x5ih+l3#56__8&#plqaot5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = socket.gethostname() == 'Yohans-MacBook-Air.local'
+TEMPLATE_DEBUG = True
 
 ADMINS = (('Yohan Estiven Arias', 'jsarias1993@gmail.com'), )
-
-TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -119,6 +119,14 @@ AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 STATIC_URL = "https://%s/" % AWS_S3_CUSTOM_DOMAIN
 STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+
+# EMAIL
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'jsarias1993@gmail.com'
+EMAIL_HOST_PASSWORD = os.environ['gmail_pass']
+EMAIL_PORT = 587
 
 
 
