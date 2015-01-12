@@ -22,7 +22,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = '^ucnnzkve7%5wp_q6$hrnf-s!##1x5ih+l3#56__8&#plqaot5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = socket.gethostname() == 'Yohans-MacBook-Air.local'
+# DEBUG = socket.gethostname() == 'Yohans-MacBook-Air.local'
+
+DEBUG = True
 
 TEMPLATE_DEBUG = True
 
