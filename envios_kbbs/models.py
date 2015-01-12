@@ -14,4 +14,7 @@ class Envio(models.Model):
 	def get_number_parte(self):
 		return self.parte.descripcion
 
+
+	get_number_parte.short_description = 'Numero de Parte'
+
 	
