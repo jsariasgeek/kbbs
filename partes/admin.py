@@ -9,7 +9,8 @@ class ParteResource(resources.ModelResource):
 		import_id_fields = ['numero_de_parte']
 
 class ParteAdmin(ImportExportModelAdmin):
-	list_display = ('numero_de_parte', 'descripcion', 'dispositivo')
+	list_display = ('numero_de_parte', 'descripcion', 'dispositivo',)
+	search_fields = ['numero_de_parte', 'descripcion',]
 	resource_class = ParteResource
 
 

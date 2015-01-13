@@ -3,7 +3,7 @@ from partes.models import Parte as Parte
 from responsables_dhl.models import Mensajero as Mensajero
 
 class Envio(models.Model):
-	fecha = models.DateField(auto_now=True)
+	fecha = models.DateField()
 	parte = models.ForeignKey(Parte)
 	sro = models.BigIntegerField(max_length=60)
 	fecha_envio = models.DateField(auto_now=True)
