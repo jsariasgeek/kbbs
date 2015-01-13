@@ -12,7 +12,7 @@ class Envio(models.Model):
 	responsable_dhl = models.ForeignKey(Mensajero)
 
 	def __unicode__(self):
-		return unicode(self.sro)
+		return unicode(self.parte + ' - ' + self.sro)
 
 	def get_number_parte(self):
 		return self.parte.numero_de_parte
