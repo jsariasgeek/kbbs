@@ -12,8 +12,7 @@ class Envio(models.Model):
 	responsable_dhl = models.ForeignKey(Mensajero)
 
 	def __unicode__(self):
-		object_name = self.parte.numero_de_parte + ' - ' + self.sro
-		return object_name
+		return self.sro
 
 	def get_number_parte(self):
 		return self.parte.numero_de_parte
