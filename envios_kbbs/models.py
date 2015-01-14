@@ -25,7 +25,7 @@ class Envio(models.Model):
 		return self.parte.numero_de_parte
 
 	def show_thumbnail(self):
-		return """<img src='%s' alt='%s'> """ %(self.avatar.url, self.names)
+		return """<img src='%s' alt='%s'> """ %(self.avatar.url, self.sro)
 
 
 
