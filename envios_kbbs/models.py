@@ -25,7 +25,7 @@ class Envio(models.Model):
 		return self.parte.numero_de_parte
 
 	def show_thumbnail(self):		
-		return """<a type="button" data-toggle="modal" data-target="#myModal"><img src='%s' alt='%s'></a>""" %(self.avatar.url, self.sro, self.picture.url)
+		return """<a><img src='%s' alt='%s'></a>""" %(self.avatar.url, self.sro, self.picture.url)
 
 
 
