@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'storages',
+    'kbbs',
     'import_export',
     'partes',
     'responsables_dhl',
