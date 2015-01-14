@@ -7,6 +7,7 @@ django-appconf==0.6
 django-imagekit==3.2.5
 django-import-export==0.2.6
 django-storages==1.1.8
+django-suit==0.2.12
 django-toolbelt==0.0.1
 gunicorn==19.1.1
 pilkit==1.1.12
