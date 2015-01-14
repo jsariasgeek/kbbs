@@ -24,8 +24,8 @@ class Envio(models.Model):
 	def get_number_parte(self):
 		return self.parte.numero_de_parte
 
-	def show_thumbnail(self):
-		return """<img src='%s' alt='%s'> """ %(self.avatar.url, self.sro)
+	def show_thumbnail(self):		
+		return """<a type="button" data-toggle="modal" data-target="#myModal"><img src='%s' alt='%s'></a> <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true><img src='%s'></div>""" %(self.avatar.url, self.sro, self.avatar.url)
 
 
 
